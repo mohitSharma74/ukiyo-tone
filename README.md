@@ -10,15 +10,19 @@ This extension includes four distinct themes:
 **Light Theme.** Inspired by fresh Washi paper and early morning light.
 *   *Core concept:* High readability, organic paper feel.
 
-### 2. Tasogare (黄昏 - Twilight)
+### 2. Karesansui (枯山水 - Dry Landscape)
+**Zen Garden Theme.** Inspired by moss, stone, and raked sand.
+*   *Core concept:* Muted moss tones with bamboo yellow accents for a peaceful focus.
+
+### 3. Tasogare (黄昏 - Twilight)
 **Soft Dark Theme.** Inspired by evening landscapes and faded indigo dyes.
 *   *Core concept:* Low eye strain, muted atmospheric tones.
 
-### 3. Kuro-Sumi (黒墨 - Black Ink)
+### 4. Kuro-Sumi (黒墨 - Black Ink)
 **Deep Dark Theme.** Inspired by charcoal ink drawings and midnight shadows.
 *   *Core concept:* Dramatic contrast, vivid highlights.
 
-### 4. Kachi-iro (勝ち色 - Victory Color)
+### 5. Kachi-iro (勝ち色 - Victory Color)
 **High Contrast Dark Theme.** Inspired by the "lucky" deepest navy indigo worn by Samurai.
 *   *Core concept:* Accessibility and sharp focus.
 

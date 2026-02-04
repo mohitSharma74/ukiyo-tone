@@ -18,6 +18,11 @@
         "path": "./themes/Asahi-color-theme.json"
       },
       {
+        "label": "Ukiyo-Tone Karesansui (Dry Landscape)",
+        "uiTheme": "vs",
+        "path": "./themes/Karesansui-color-theme.json"
+      },
+      {
         "label": "Ukiyo-Tone Tasogare (Twilight)",
         "uiTheme": "vs-dark",
         "path": "./themes/Tasogare-color-theme.json"
