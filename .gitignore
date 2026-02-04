@@ -28,3 +28,5 @@ yarn-error.log*
 .vscode/*
 !.vscode/launch.json
 *.vsix
+
+dist/

@@ -1,9 +1,10 @@
 {
   "name": "ukiyo-tone",
   "displayName": "Ukiyo-Tone (浮世トーン)",
-  "description": "A four-theme bundle inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
+  "description": "A six-theme bundle inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
   "version": "1.0.0",
-  "publisher": "mohitSharma74",
+  "publisher": "OneMohitSharma",
+  "icon": "assets/logo-16x16.png",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -44,6 +45,10 @@
       }
     ]
   },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "package": "npm run clean && mkdir -p dist && vsce package --out dist/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mohitSharma74/ukiyo-tone"
@@ -52,4 +57,5 @@
     "url": "https://github.com/mohitSharma74/ukiyo-tone/issues"
   },
   "homepage": "https://github.com/mohitSharma74/ukiyo-tone#readme",
-  "license": "MIT",
+  "license": "MIT"
+}
