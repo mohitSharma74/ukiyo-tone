@@ -37,14 +37,14 @@ This extension includes six distinct themes, each inspired by specific elements 
 
 ### 4. Koke-Dera (苔寺 - Moss Temple)
 
-![Koke-Dera](media/Koke-Dera.png)
+![Koke-Dera](media/Koke-dera.png)
 
 **Monotone Dark Theme.** Inspired by deep forest shadows and moss gardens.
 *   *Core concept:* Deep forest green background with a loose monotone green palette for immersion.
 
 ### 5. Kuro-Sumi (黒墨 - Black Ink)
 
-![Kuro-Sumi](media/Kuro-Sumi.png)
+![Kuro-Sumi](media/Kuro-sumi.png)
 
 **Deep Dark Theme.** Inspired by charcoal ink drawings and midnight shadows.
 *   *Core concept:* Dramatic contrast, vivid highlights.
