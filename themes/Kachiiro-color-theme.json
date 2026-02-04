@@ -1,0 +1,68 @@
+{
+  "name": "Ukiyo-Tone Kachi-iro (Victory Color)",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#0D1117",
+    "editor.foreground": "#FFFFFF",
+    "activityBar.background": "#05070A",
+    "activityBar.foreground": "#FFFFFF",
+    "sideBar.background": "#090C10",
+    "sideBar.foreground": "#FFFFFF",
+    "editor.selectionBackground": "#CB40424D",
+    "editor.lineHighlightBackground": "#161B22",
+    "editorCursor.foreground": "#FF003C",
+    "editorGroup.border": "#30363D",
+    "sideBar.border": "#30363D",
+    "activityBar.border": "#30363D",
+    "statusBar.background": "#05070A",
+    "statusBar.foreground": "#FFFFFF",
+    "terminal.ansiBlack": "#0D1117",
+    "terminal.ansiRed": "#FF003C",
+    "terminal.ansiGreen": "#00FFCC",
+    "terminal.ansiYellow": "#FFFF00",
+    "terminal.ansiBlue": "#FFFF00",
+    "terminal.ansiMagenta": "#FF003C",
+    "terminal.ansiCyan": "#00FFCC",
+    "terminal.ansiWhite": "#FFFFFF"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#8B949E",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["keyword", "storage", "storage.type"],
+      "settings": {
+        "foreground": "#FF003C"
+      }
+    },
+    {
+      "scope": ["string", "string.quoted"],
+      "settings": {
+        "foreground": "#00FFCC"
+      }
+    },
+    {
+      "scope": ["entity.name.function", "support.function"],
+      "settings": {
+        "foreground": "#FFFF00"
+      }
+    },
+    {
+      "scope": ["variable", "variable.parameter"],
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "scope": ["entity.name.type", "entity.name.class", "variable.other.constant"],
+      "settings": {
+        "foreground": "#FF003C",
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}

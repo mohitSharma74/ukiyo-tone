@@ -1,0 +1,41 @@
+{
+  "name": "ukiyo-tone",
+  "displayName": "Ukiyo-Tone (浮世トーン)",
+  "description": "A four-theme bundle inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
+  "version": "1.0.0",
+  "publisher": "mohitSharma74",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ukiyo-Tone Asahi (Morning Sun)",
+        "uiTheme": "vs",
+        "path": "./themes/Asahi-color-theme.json"
+      },
+      {
+        "label": "Ukiyo-Tone Tasogare (Twilight)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Tasogare-color-theme.json"
+      },
+      {
+        "label": "Ukiyo-Tone Kuro-Sumi (Black Ink)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/KuroSumi-color-theme.json"
+      },
+      {
+        "label": "Ukiyo-Tone Kachi-iro (Victory Color)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Kachiiro-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohitSharma74/ukiyo-tone"
+  }
+}
