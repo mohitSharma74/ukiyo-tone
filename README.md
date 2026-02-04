@@ -3,7 +3,7 @@
 > *Ukiyo-Tone is a restrained, culturally grounded coding theme designed as a personal instrument — calm, sharp, and built for long hours of focused work.*
 
 <p align="center">
-  <img src="./ukiyo-tone-banner.png" alt="Ukiyo-Tone Banner">
+  <img src="media/ukiyo-tone-banner.png" alt="Ukiyo-Tone Banner">
 </p>
 
 **Ukiyo-Tone** is a visual instrument for thinking in code, inspired by 17th-century Japanese Ukiyo-e woodblock prints and Sumi-e ink traditions. It is not designed for novelty or mass appeal, but as a deliberately constrained environment that *disappears* once deep focus begins.
@@ -15,26 +15,44 @@ The goal is not excitement; the goal is **clarity with character**.
 This extension includes six distinct themes, each inspired by specific elements of the Edo period aesthetic:
 
 ### 1. Asahi (旭 - Morning Sun)
+
+![Asahi](media/Asahi.png)
+
 **Light Theme.** Inspired by fresh Washi paper and early morning light.
 *   *Core concept:* High readability, organic paper feel.
 
 ### 2. Karesansui (枯山水 - Dry Landscape)
+
+![Karesansui](media/Karesansui.png)
+
 **Zen Garden Theme.** Inspired by moss, stone, and raked sand.
 *   *Core concept:* Muted moss tones with bamboo yellow accents for a peaceful focus.
 
 ### 3. Tasogare (黄昏 - Twilight)
+
+![Tasogare](media/Tasogare.png)
+
 **Soft Dark Theme.** Inspired by evening landscapes and faded indigo dyes.
 *   *Core concept:* Low eye strain, muted atmospheric tones.
 
 ### 4. Koke-Dera (苔寺 - Moss Temple)
+
+![Koke-Dera](media/Koke-Dera.png)
+
 **Monotone Dark Theme.** Inspired by deep forest shadows and moss gardens.
 *   *Core concept:* Deep forest green background with a loose monotone green palette for immersion.
 
 ### 5. Kuro-Sumi (黒墨 - Black Ink)
+
+![Kuro-Sumi](media/Kuro-Sumi.png)
+
 **Deep Dark Theme.** Inspired by charcoal ink drawings and midnight shadows.
 *   *Core concept:* Dramatic contrast, vivid highlights.
 
 ### 6. Kachi-iro (勝ち色 - Victory Color)
+
+![Kachi-iro](media/Kachi-iro.png)
+
 **High Contrast Dark Theme.** Inspired by the "lucky" deepest navy indigo worn by Samurai.
 *   *Core concept:* Accessibility and sharp focus.
 
