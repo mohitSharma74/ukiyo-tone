@@ -4,7 +4,7 @@
   "description": "A six-theme bundle inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
   "version": "1.0.0",
   "publisher": "OneMohitSharma",
-  "icon": "assets/logo-16x16.png",
+  "icon": "./media/logo-16x16.png",
   "engines": {
     "vscode": "^1.60.0"
   },
