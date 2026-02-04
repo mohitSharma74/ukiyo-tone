@@ -18,11 +18,15 @@ This extension includes four distinct themes:
 **Soft Dark Theme.** Inspired by evening landscapes and faded indigo dyes.
 *   *Core concept:* Low eye strain, muted atmospheric tones.
 
-### 4. Kuro-Sumi (黒墨 - Black Ink)
+### 4. Koke-Dera (苔寺 - Moss Temple)
+**Monotone Dark Theme.** Inspired by deep forest shadows and moss gardens.
+*   *Core concept:* Deep forest green background with a loose monotone green palette for immersion.
+
+### 5. Kuro-Sumi (黒墨 - Black Ink)
 **Deep Dark Theme.** Inspired by charcoal ink drawings and midnight shadows.
 *   *Core concept:* Dramatic contrast, vivid highlights.
 
-### 5. Kachi-iro (勝ち色 - Victory Color)
+### 6. Kachi-iro (勝ち色 - Victory Color)
 **High Contrast Dark Theme.** Inspired by the "lucky" deepest navy indigo worn by Samurai.
 *   *Core concept:* Accessibility and sharp focus.
 

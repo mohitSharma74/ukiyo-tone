@@ -28,6 +28,11 @@
         "path": "./themes/Tasogare-color-theme.json"
       },
       {
+        "label": "Ukiyo-Tone Koke-Dera (Moss Temple)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/KokeDera-color-theme.json"
+      },
+      {
         "label": "Ukiyo-Tone Kuro-Sumi (Black Ink)",
         "uiTheme": "vs-dark",
         "path": "./themes/KuroSumi-color-theme.json"
