@@ -47,5 +47,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mohitSharma74/ukiyo-tone"
-  }
-}
+  },
+  "bugs": {
+    "url": "https://github.com/mohitSharma74/ukiyo-tone/issues"
+  },
+  "homepage": "https://github.com/mohitSharma74/ukiyo-tone#readme",
+  "license": "MIT",
