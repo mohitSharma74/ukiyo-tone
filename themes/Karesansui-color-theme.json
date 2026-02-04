@@ -67,6 +67,51 @@
         "foreground": "#4A5056",
         "fontStyle": "bold"
       }
+    },
+    {
+      "scope": ["support.type.property-name.json", "string.key.json", "entity.name.tag.yaml"],
+      "settings": {
+        "foreground": "#C19C4D"
+      }
+    },
+    {
+      "scope": ["markup.heading", "markup.heading.markdown"],
+      "settings": {
+        "foreground": "#C19C4D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["markup.bold", "markup.bold.markdown"],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["markup.italic", "markup.italic.markdown"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["markup.raw", "markup.fenced_code.block", "markup.inline.raw"],
+      "settings": {
+        "foreground": "#6A7B54"
+      }
+    },
+    {
+      "scope": ["markup.quote", "markup.quote.markdown"],
+      "settings": {
+        "foreground": "#949C96",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["markup.underline.link", "string.other.link"],
+      "settings": {
+        "foreground": "#5B7C8C",
+        "fontStyle": "underline"
+      }
     }
   ]
 }
