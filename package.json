@@ -6,7 +6,7 @@
   "publisher": "OneMohitSharma",
   "icon": "./media/logo-16x16.png",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
