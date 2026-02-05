@@ -3,7 +3,7 @@
 > *Ukiyo-Tone is a restrained, culturally grounded coding theme designed as a personal instrument — calm, sharp, and built for long hours of focused work.*
 
 <p align="center">
-  <img src="media/ukiyo-tone-banner.png" alt="Ukiyo-Tone Banner">
+  <img src="media/ukiyo-tone-minimal-banner.png" alt="Ukiyo-Tone Banner">
 </p>
 
 **Ukiyo-Tone** is a visual instrument for thinking in code, inspired by 17th-century Japanese Ukiyo-e woodblock prints and Sumi-e ink traditions. It is not designed for novelty or mass appeal, but as a deliberately constrained environment that *disappears* once deep focus begins.
