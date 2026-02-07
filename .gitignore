@@ -12,7 +12,6 @@ build/
 
 # Generated artifacts
 editors/vscode/themes/
-editors/zed/themes/
 dist/
 
 # Misc
@@ -34,4 +33,4 @@ yarn-error.log*
 *.vsix
 
 # future planning
-future/
+docs/

@@ -56,6 +56,13 @@ function adjustHex(hex, factor) {
   return `#${toHex(clamp(r * factor))}${toHex(clamp(g * factor))}${toHex(clamp(b * factor))}`;
 }
 
+function mixHex(hexA, hexB, ratio) {
+  const a = hexToRgb(hexA);
+  const b = hexToRgb(hexB);
+  const r = 1 - ratio;
+  return `#${toHex(clamp(a.r * r + b.r * ratio))}${toHex(clamp(a.g * r + b.g * ratio))}${toHex(clamp(a.b * r + b.b * ratio))}`;
+}
+
 function withAlpha(hex, alphaHex) {
   return `${hex.slice(0, 7)}${alphaHex}`;
 }
@@ -231,6 +238,10 @@ function buildZedTheme(palette) {
 
   const selection = overrides.selectionBackground ?? withAlpha(slots.accent, '4D');
   const playerCursor = selection === '#CB40424D' ? '#CB4042' : slots.accent;
+  const mutedText = overrides.zedTextMuted ?? mixHex(slots.muted, slots.fg, 0.55);
+  const mutedIcon = overrides.zedIconMuted ?? mixHex(slots.muted, slots.fg, 0.65);
+  const terminalForeground = overrides.terminalForeground ?? slots.fg;
+  const terminalBackground = overrides.terminalBackground ?? slots.bg;
 
   return {
     name,
@@ -253,9 +264,10 @@ function buildZedTheme(palette) {
       'ghost_element.hover': withAlpha(slots.fg, '14'),
       'ghost_element.active': withAlpha(slots.fg, '1F'),
       'text': slots.fg,
-      'text.muted': slots.muted,
+      'text.muted': mutedText,
       'text.accent': slots.accent,
       'icon': slots.fg,
+      'icon.muted': mutedIcon,
       'editor.background': slots.bg,
       'editor.foreground': slots.fg,
       'editor.gutter.background': slots.sidebarBg,
@@ -265,6 +277,11 @@ function buildZedTheme(palette) {
       'editor.document_highlight.read_background': selection,
       'editor.document_highlight.write_background': selection,
       'link_text.hover': slots.function,
+      'terminal.background': terminalBackground,
+      'terminal.ansi.background': terminalBackground,
+      'terminal.foreground': terminalForeground,
+      'terminal.bright_foreground': adjustHex(terminalForeground, 1.12),
+      'terminal.dim_foreground': adjustHex(terminalForeground, 0.88),
       error: terminalBase.ansiRed,
       warning: terminalBase.ansiYellow,
       info: terminalBase.ansiBlue,
