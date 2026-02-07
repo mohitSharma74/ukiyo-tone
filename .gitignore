@@ -8,8 +8,12 @@ coverage/
 
 # Production
 out/
-dist/
 build/
+
+# Generated artifacts
+editors/vscode/themes/
+editors/zed/themes/
+dist/
 
 # Misc
 .DS_Store
@@ -29,4 +33,5 @@ yarn-error.log*
 !.vscode/launch.json
 *.vsix
 
-dist/
+# future planning
+future/

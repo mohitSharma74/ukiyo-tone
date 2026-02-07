@@ -1,0 +1,33 @@
+{
+  "id": "kurosumi",
+  "name": "Ukiyo-Tone Kuro-Sumi (Black Ink)",
+  "appearance": "dark",
+  "uiTheme": "vs-dark",
+  "slots": {
+    "bg": "#1C1C1C",
+    "panelBg": "#141414",
+    "sidebarBg": "#181818",
+    "fg": "#DCDCDC",
+    "muted": "#727169",
+    "accent": "#FF5D62",
+    "string": "#98BB6C",
+    "function": "#7E9CD8",
+    "variable": "#E6C384"
+  },
+  "overrides": {
+    "selectionBackground": "#CB40424D",
+    "lineHighlightBackground": "#2A2A2A",
+    "border": "#7271694D",
+    "terminal": {
+      "ansiBlack": "#1C1C1C",
+      "ansiRed": "#FF5D62",
+      "ansiGreen": "#98BB6C",
+      "ansiYellow": "#E6C384",
+      "ansiBlue": "#7E9CD8",
+      "ansiMagenta": "#7E9CD8",
+      "ansiCyan": "#98BB6C",
+      "ansiWhite": "#DCDCDC"
+    },
+    "typeColor": "#FF5D62"
+  }
+}

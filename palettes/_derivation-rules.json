@@ -1,0 +1,27 @@
+{
+  "themeOrder": [
+    "asahi",
+    "karesansui",
+    "tasogare",
+    "kokedera",
+    "kurosumi",
+    "kachiiro"
+  ],
+  "vscode": {
+    "tokenScopes": {
+      "comment": ["comment", "punctuation.definition.comment"],
+      "keyword": ["keyword", "storage", "storage.type"],
+      "string": ["string", "string.quoted"],
+      "function": ["entity.name.function", "support.function"],
+      "variable": ["variable", "variable.parameter"],
+      "type": ["entity.name.type", "entity.name.class", "variable.other.constant"],
+      "property": ["support.type.property-name.json", "string.key.json", "entity.name.tag.yaml"],
+      "heading": ["markup.heading", "markup.heading.markdown"],
+      "bold": ["markup.bold", "markup.bold.markdown"],
+      "italic": ["markup.italic", "markup.italic.markdown"],
+      "raw": ["markup.raw", "markup.fenced_code.block", "markup.inline.raw"],
+      "quote": ["markup.quote", "markup.quote.markdown"],
+      "link": ["markup.underline.link", "string.other.link"]
+    }
+  }
+}

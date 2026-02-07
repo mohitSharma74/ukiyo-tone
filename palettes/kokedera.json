@@ -1,0 +1,34 @@
+{
+  "id": "kokedera",
+  "name": "Ukiyo-Tone Koke-Dera (Moss Temple)",
+  "appearance": "dark",
+  "uiTheme": "vs-dark",
+  "slots": {
+    "bg": "#0F1F1C",
+    "panelBg": "#0A1412",
+    "sidebarBg": "#0C1A17",
+    "fg": "#D4E0D9",
+    "muted": "#4F6359",
+    "accent": "#8CB060",
+    "string": "#4D8C7D",
+    "function": "#B8D8BE",
+    "variable": "#A3BFA8"
+  },
+  "overrides": {
+    "selectionBackground": "#4D8C7D33",
+    "lineHighlightBackground": "#1A332E",
+    "border": "#4F63594D",
+    "activityBarForeground": "#8CB060",
+    "terminal": {
+      "ansiBlack": "#0F1F1C",
+      "ansiRed": "#8CB060",
+      "ansiGreen": "#4D8C7D",
+      "ansiYellow": "#A3BFA8",
+      "ansiBlue": "#B8D8BE",
+      "ansiMagenta": "#8CB060",
+      "ansiCyan": "#4D8C7D",
+      "ansiWhite": "#D4E0D9"
+    },
+    "typeColor": "#D4E0D9"
+  }
+}

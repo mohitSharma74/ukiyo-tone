@@ -1,0 +1,33 @@
+{
+  "id": "karesansui",
+  "name": "Ukiyo-Tone Karesansui (Dry Landscape)",
+  "appearance": "light",
+  "uiTheme": "vs",
+  "slots": {
+    "bg": "#E8EDE6",
+    "panelBg": "#DEE4DC",
+    "sidebarBg": "#DEE4DC",
+    "fg": "#4A5056",
+    "muted": "#949C96",
+    "accent": "#C19C4D",
+    "string": "#6A7B54",
+    "function": "#5B7C8C",
+    "variable": "#5D5650"
+  },
+  "overrides": {
+    "selectionBackground": "#4A505633",
+    "lineHighlightBackground": "#DEE4DC80",
+    "border": "#949C964D",
+    "terminal": {
+      "ansiBlack": "#4A5056",
+      "ansiRed": "#C19C4D",
+      "ansiGreen": "#6A7B54",
+      "ansiYellow": "#C19C4D",
+      "ansiBlue": "#5B7C8C",
+      "ansiMagenta": "#8C7C96",
+      "ansiCyan": "#5B7C8C",
+      "ansiWhite": "#E8EDE6"
+    },
+    "typeColor": "#4A5056"
+  }
+}

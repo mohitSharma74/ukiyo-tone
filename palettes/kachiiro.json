@@ -1,0 +1,33 @@
+{
+  "id": "kachiiro",
+  "name": "Ukiyo-Tone Kachi-iro (Victory Color)",
+  "appearance": "dark",
+  "uiTheme": "vs-dark",
+  "slots": {
+    "bg": "#0D1117",
+    "panelBg": "#05070A",
+    "sidebarBg": "#090C10",
+    "fg": "#FFFFFF",
+    "muted": "#8B949E",
+    "accent": "#FF003C",
+    "string": "#00FFCC",
+    "function": "#FFFF00",
+    "variable": "#FFFFFF"
+  },
+  "overrides": {
+    "selectionBackground": "#CB40424D",
+    "lineHighlightBackground": "#161B22",
+    "border": "#30363D",
+    "terminal": {
+      "ansiBlack": "#0D1117",
+      "ansiRed": "#FF003C",
+      "ansiGreen": "#00FFCC",
+      "ansiYellow": "#FFFF00",
+      "ansiBlue": "#FFFF00",
+      "ansiMagenta": "#FF003C",
+      "ansiCyan": "#00FFCC",
+      "ansiWhite": "#FFFFFF"
+    },
+    "typeColor": "#FF003C"
+  }
+}
