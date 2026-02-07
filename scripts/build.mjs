@@ -212,21 +212,21 @@ function buildZedTheme(palette) {
   };
 
   const zedAnsi = {
-    'ansi.black': terminalBase.ansiBlack,
-    'ansi.red': terminalBase.ansiRed,
-    'ansi.green': terminalBase.ansiGreen,
-    'ansi.yellow': terminalBase.ansiYellow,
-    'ansi.blue': terminalBase.ansiBlue,
-    'ansi.magenta': terminalBase.ansiMagenta,
-    'ansi.cyan': terminalBase.ansiCyan,
-    'ansi.white': terminalBase.ansiWhite
+    'terminal.ansi.black': terminalBase.ansiBlack,
+    'terminal.ansi.red': terminalBase.ansiRed,
+    'terminal.ansi.green': terminalBase.ansiGreen,
+    'terminal.ansi.yellow': terminalBase.ansiYellow,
+    'terminal.ansi.blue': terminalBase.ansiBlue,
+    'terminal.ansi.magenta': terminalBase.ansiMagenta,
+    'terminal.ansi.cyan': terminalBase.ansiCyan,
+    'terminal.ansi.white': terminalBase.ansiWhite
   };
 
   for (const key of TERMINAL_BASE_KEYS) {
     const color = terminalBase[key];
     const normalized = key.replace('ansi', '').toLowerCase();
-    zedAnsi[`ansi.bright_${normalized}`] = adjustHex(color, 1.2);
-    zedAnsi[`ansi.dim_${normalized}`] = adjustHex(color, 0.8);
+    zedAnsi[`terminal.ansi.bright_${normalized}`] = adjustHex(color, 1.2);
+    zedAnsi[`terminal.ansi.dim_${normalized}`] = adjustHex(color, 0.8);
   }
 
   const selection = overrides.selectionBackground ?? withAlpha(slots.accent, '4D');
@@ -265,38 +265,36 @@ function buildZedTheme(palette) {
       'editor.document_highlight.read_background': selection,
       'editor.document_highlight.write_background': selection,
       'link_text.hover': slots.function,
-      ...zedAnsi
-    },
-    status: {
       error: terminalBase.ansiRed,
       warning: terminalBase.ansiYellow,
       info: terminalBase.ansiBlue,
       hint: terminalBase.ansiCyan,
       created: terminalBase.ansiGreen,
       modified: terminalBase.ansiYellow,
-      deleted: terminalBase.ansiRed
-    },
-    players: [
-      {
-        cursor: playerCursor,
-        selection
-      }
-    ],
-    syntax: {
-      keyword: { color: slots.accent },
-      function: { color: slots.function },
-      type: { color: overrides.typeColor ?? slots.accent, font_weight: 700 },
-      constant: { color: overrides.typeColor ?? slots.accent, font_weight: 700 },
-      property: { color: slots.accent },
-      variable: { color: slots.variable },
-      string: { color: slots.string },
-      comment: { color: slots.muted, font_style: 'italic' },
-      tag: { color: slots.accent },
-      title: { color: slots.accent, font_weight: 700 },
-      emphasis: { font_style: 'italic' },
-      'emphasis.strong': { font_weight: 700 },
-      link_uri: { color: slots.function, underline: true },
-      link_text: { color: slots.function, underline: true }
+      deleted: terminalBase.ansiRed,
+      players: [
+        {
+          cursor: playerCursor,
+          selection
+        }
+      ],
+      syntax: {
+        keyword: { color: slots.accent },
+        function: { color: slots.function },
+        type: { color: overrides.typeColor ?? slots.accent, font_weight: 700 },
+        constant: { color: overrides.typeColor ?? slots.accent, font_weight: 700 },
+        property: { color: slots.accent },
+        variable: { color: slots.variable },
+        string: { color: slots.string },
+        comment: { color: slots.muted, font_style: 'italic' },
+        tag: { color: slots.accent },
+        title: { color: slots.accent, font_weight: 700 },
+        emphasis: { font_style: 'italic' },
+        'emphasis.strong': { font_weight: 700 },
+        link_uri: { color: slots.function },
+        link_text: { color: slots.function }
+      },
+      ...zedAnsi
     }
   };
 }
