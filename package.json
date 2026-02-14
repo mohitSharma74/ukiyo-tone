@@ -9,7 +9,7 @@
     "build:vscode": "node scripts/build.mjs vscode",
     "build:zed": "node scripts/build.mjs zed",
     "validate": "node scripts/validate.mjs",
-    "clean": "rm -rf dist editors/vscode/themes editors/zed/themes",
+    "clean": "rm -rf dist",
     "package:vscode": "npm run build:vscode && mkdir -p dist && (cd editors/vscode && npx @vscode/vsce package --out ../../dist/ukiyo-tone-vscode.vsix)",
     "package:zed": "npm run build:zed && test -f editors/zed/extension.toml && test -f editors/zed/themes/ukiyo-tone.json && mkdir -p dist && tar -czf dist/ukiyo-tone-zed.tar.gz -C editors/zed extension.toml LICENSE themes",
     "package:all": "npm run clean && npm run package:vscode && npm run package:zed"

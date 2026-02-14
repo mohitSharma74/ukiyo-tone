@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -17,6 +17,19 @@ const filePairs = [
 ];
 
 async function main() {
+  // Check if baseline directory exists
+  const baselineDir = path.join(rootDir, 'future', 'legacy-vscode-themes');
+  try {
+    await access(baselineDir);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log('Baseline directory (future/legacy-vscode-themes) not found. Skipping validation.');
+      console.log('To enable validation, add legacy theme files to compare against.');
+      return;
+    }
+    throw error;
+  }
+
   const mismatches = [];
 
   for (const [generated, legacy] of filePairs) {
@@ -42,6 +55,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(error.message);
+  console.error(error.stack ?? error);
   process.exitCode = 1;
 });

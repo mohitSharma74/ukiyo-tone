@@ -67,6 +67,10 @@ function withAlpha(hex, alphaHex) {
   return `${hex.slice(0, 7)}${alphaHex}`;
 }
 
+function stripAlpha(hex) {
+  return hex.slice(0, 7);
+}
+
 async function loadRules() {
   const raw = await readFile(paths.rules, 'utf8');
   return JSON.parse(raw);
@@ -237,7 +241,7 @@ function buildZedTheme(palette) {
   }
 
   const selection = overrides.selectionBackground ?? withAlpha(slots.accent, '4D');
-  const playerCursor = selection === '#CB40424D' ? '#CB4042' : slots.accent;
+  const playerCursor = overrides.playerCursor ?? stripAlpha(selection);
   const mutedText = overrides.zedTextMuted ?? mixHex(slots.muted, slots.fg, 0.55);
   const mutedIcon = overrides.zedIconMuted ?? mixHex(slots.muted, slots.fg, 0.65);
   const terminalForeground = overrides.terminalForeground ?? slots.fg;
@@ -360,7 +364,7 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(error.message);
+  console.error(error.stack ?? error);
   process.exitCode = 1;
 });
 
