@@ -1,0 +1,7 @@
+id = "ukiyo-tone"
+name = "Ukiyo Tone"
+version = "1.0.0"
+schema_version = 1
+authors = ["Mohit Sharma"]
+description = "A six-theme bundle inspired by Ukiyo-e palettes for long-session coding."
+repository = "https://github.com/mohitSharma74/ukiyo-tone"

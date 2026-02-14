@@ -1,0 +1,33 @@
+{
+  "id": "asahi",
+  "name": "Ukiyo-Tone Asahi (Morning Sun)",
+  "appearance": "light",
+  "uiTheme": "vs",
+  "slots": {
+    "bg": "#F0F4F5",
+    "panelBg": "#DCE4E8",
+    "sidebarBg": "#E3E9ED",
+    "fg": "#264348",
+    "muted": "#A19A84",
+    "accent": "#CB4042",
+    "string": "#4F7942",
+    "function": "#264348",
+    "variable": "#8C5A3C"
+  },
+  "overrides": {
+    "selectionBackground": "#CB40424D",
+    "lineHighlightBackground": "#DCE4E866",
+    "border": "#26434833",
+    "terminal": {
+      "ansiBlack": "#264348",
+      "ansiRed": "#CB4042",
+      "ansiGreen": "#4F7942",
+      "ansiYellow": "#8C5A3C",
+      "ansiBlue": "#264348",
+      "ansiMagenta": "#CB4042",
+      "ansiCyan": "#4F7942",
+      "ansiWhite": "#F2EBD3"
+    },
+    "typeColor": "#264348"
+  }
+}

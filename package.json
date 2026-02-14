@@ -1,61 +1,17 @@
 {
   "name": "ukiyo-tone",
   "displayName": "Ukiyo-Tone (浮世トーン)",
-  "description": "A six-theme bundle inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
   "version": "1.0.0",
-  "publisher": "OneMohitSharma",
-  "icon": "./media/logo-16x16.png",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Ukiyo-Tone Asahi (Morning Sun)",
-        "uiTheme": "vs",
-        "path": "./themes/Asahi-color-theme.json"
-      },
-      {
-        "label": "Ukiyo-Tone Karesansui (Dry Landscape)",
-        "uiTheme": "vs",
-        "path": "./themes/Karesansui-color-theme.json"
-      },
-      {
-        "label": "Ukiyo-Tone Tasogare (Twilight)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Tasogare-color-theme.json"
-      },
-      {
-        "label": "Ukiyo-Tone Koke-Dera (Moss Temple)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/KokeDera-color-theme.json"
-      },
-      {
-        "label": "Ukiyo-Tone Kuro-Sumi (Black Ink)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/KuroSumi-color-theme.json"
-      },
-      {
-        "label": "Ukiyo-Tone Kachi-iro (Victory Color)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Kachiiro-color-theme.json"
-      }
-    ]
-  },
+  "description": "Monorepo build orchestrator for Ukiyo-Tone editor themes inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
+  "license": "MIT",
   "scripts": {
+    "build": "node scripts/build.mjs all",
+    "build:vscode": "node scripts/build.mjs vscode",
+    "build:zed": "node scripts/build.mjs zed",
+    "validate": "node scripts/validate.mjs",
     "clean": "rm -rf dist",
-    "package": "npm run clean && mkdir -p dist && vsce package --out dist/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mohitSharma74/ukiyo-tone"
-  },
-  "bugs": {
-    "url": "https://github.com/mohitSharma74/ukiyo-tone/issues"
-  },
-  "homepage": "https://github.com/mohitSharma74/ukiyo-tone#readme",
-  "license": "MIT"
+    "package:vscode": "npm run build:vscode && mkdir -p dist && (cd editors/vscode && npx @vscode/vsce package --out ../../dist/ukiyo-tone-vscode.vsix)",
+    "package:zed": "npm run build:zed && test -f editors/zed/extension.toml && test -f editors/zed/themes/ukiyo-tone.json && mkdir -p dist && tar -czf dist/ukiyo-tone-zed.tar.gz -C editors/zed extension.toml LICENSE themes",
+    "package:all": "npm run clean && npm run package:vscode && npm run package:zed"
+  }
 }

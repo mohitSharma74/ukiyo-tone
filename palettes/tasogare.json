@@ -1,0 +1,34 @@
+{
+  "id": "tasogare",
+  "name": "Ukiyo-Tone Tasogare (Twilight)",
+  "appearance": "dark",
+  "uiTheme": "vs-dark",
+  "slots": {
+    "bg": "#2D333B",
+    "panelBg": "#22272E",
+    "sidebarBg": "#22272E",
+    "fg": "#ADB5BD",
+    "muted": "#636E7B",
+    "accent": "#E0C1B3",
+    "string": "#7AA2F7",
+    "function": "#BB9AF7",
+    "variable": "#E6C384"
+  },
+  "overrides": {
+    "selectionBackground": "#CB40424D",
+    "lineHighlightBackground": "#373E47",
+    "border": "#636E7B4D",
+    "activityBarForeground": "#E0C1B3",
+    "terminal": {
+      "ansiBlack": "#2D333B",
+      "ansiRed": "#CB4042",
+      "ansiGreen": "#7AA2F7",
+      "ansiYellow": "#E6C384",
+      "ansiBlue": "#BB9AF7",
+      "ansiMagenta": "#BB9AF7",
+      "ansiCyan": "#7AA2F7",
+      "ansiWhite": "#ADB5BD"
+    },
+    "typeColor": "#E0C1B3"
+  }
+}
