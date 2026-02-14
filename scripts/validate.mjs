@@ -17,6 +17,19 @@ const filePairs = [
 ];
 
 async function main() {
+  // Check if baseline directory exists
+  const baselineDir = path.join(rootDir, 'future', 'legacy-vscode-themes');
+  try {
+    await readFile(path.join(baselineDir, 'Asahi-color-theme.json'), 'utf8');
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log('Baseline directory (future/legacy-vscode-themes) not found. Skipping validation.');
+      console.log('To enable validation, add legacy theme files to compare against.');
+      return;
+    }
+    throw error;
+  }
+
   const mismatches = [];
 
   for (const [generated, legacy] of filePairs) {
@@ -42,6 +55,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(error.message);
+  console.error(error.stack ?? error);
   process.exitCode = 1;
 });
