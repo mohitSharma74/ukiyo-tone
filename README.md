@@ -10,6 +10,14 @@
 
 The goal is not excitement; the goal is **clarity with character**.
 
+## Marketplace Links
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=OneMohitSharma.ukiyo-tone)
+- [Open VSX Registry](https://open-vsx.org/extension/OneMohitSharma/ukiyo-tone)
+- [Zed Extensions](https://zed.dev/extensions/ukiyo-tone)
+
+## Tags
+[`vscode-marketplace`](https://marketplace.visualstudio.com/items?itemName=OneMohitSharma.ukiyo-tone) [`zed-extensions`](https://zed.dev/extensions/ukiyo-tone) `vscode-theme` `zed-theme` `editor-theme` `syntax-highlighting` `dark-theme` `light-theme` `minimal` `high-contrast` `accessibility` `focus` `low-eye-strain` `japanese-aesthetic` `ukiyo-e` `sumi-e` `developer-experience`
+
 ## The Theme Bundle
 
 This extension includes six distinct themes, each inspired by specific elements of the Edo period aesthetic:
@@ -112,9 +120,6 @@ This theme pairs exceptionally well with typefaces that balance geometric precis
 
 ## Authors
 **Mohit Sharma** (@mohitSharma74)
-
-## Tags
-`vs-code-theme` `japan` `ukiyo-e` `minimal` `dark-theme` `light-theme` `focus`
 
 ## License
 
