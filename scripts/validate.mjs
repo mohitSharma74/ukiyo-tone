@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -20,7 +20,7 @@ async function main() {
   // Check if baseline directory exists
   const baselineDir = path.join(rootDir, 'future', 'legacy-vscode-themes');
   try {
-    await readFile(path.join(baselineDir, 'Asahi-color-theme.json'), 'utf8');
+    await access(baselineDir);
   } catch (error) {
     if (error.code === 'ENOENT') {
       console.log('Baseline directory (future/legacy-vscode-themes) not found. Skipping validation.');
