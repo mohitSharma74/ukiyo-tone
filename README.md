@@ -76,9 +76,19 @@ We use Japanese visual culture as a system of constraints to guide the developer
 ## Usage
 
 ### Installation
+
+#### VS Code
 1. Open the **Extensions** sidebar in VS Code.
 2. Search for `Ukiyo-Tone`.
 3. Click **Install**.
+
+#### Zed Editor
+For detailed Zed installation instructions (marketplace and manual), see [editors/zed/README.md](editors/zed/README.md).
+
+**Quick Install:**
+1. Press `Ctrl+Shift+X` (or `Cmd+Shift+X` on macOS)
+2. Search for `Ukiyo-Tone`
+3. Click **Install**
 
 ### Recommended Settings
 To fully embrace the *Ukiyo-Tone* philosophy of restraint and focus, we recommend the following editor settings to reduce visual noise:

@@ -2,7 +2,7 @@
   "name": "ukiyo-tone",
   "displayName": "Ukiyo-Tone (浮世トーン)",
   "description": "A six-theme bundle inspired by 17th-century Japanese Ukiyo-e art and mineral pigments.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "OneMohitSharma",
   "icon": "./media/logo-16x16.png",
   "engines": {
